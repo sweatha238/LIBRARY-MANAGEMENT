@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>ADD BOOK</title>
+    </head>
+    <body>
+       <form id="form" method="post">
+    <input type="text" id="ISBN NO." placeholder="enter isbn"/><br><br>
+     <input type="text" id="BOOK NAME" placeholder="enter book name"/><br><br>
+    <input type="submit" value="Add book"/>
+    </form>
+    </body>
+<script>
+    var form = document.getElementById('form')
+    form.addEventListener('submit',function(e){
+    e.preventDefault()
+    alert("YOUR BOOK IS ADDED")
+    })
+    </script></html>

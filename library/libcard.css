@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap')
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Josefin Sans' , sans-serif;
+}
+
+body{
+    background-image: url(libcard.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #d0bbe5;
+    padding: 35px 15px 15px;
+    border-radius: 5px;
+}
+.wrapper:before{
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 13px;
+    background: #b696d7;
+    border-radius: 50px;
+}
+
+.wrapper:after{
+    content: "";
+    position: absolute;
+    top: -212px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 230px;
+    background: #353535;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.125)
+}
+
+.wrapper .card{
+    width: 200px;
+    height: 320px;
+    background:#fff;
+    padding: 20px 20px 0;
+    position: relative;
+    border-radius: 5px;
+}
+
+.wrapper .card img{
+    width: 100%;
+    margin-bottom: 80px;
+    
+}
+.wrapper .card:before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 30%;
+    height: 225px;
+    background: #353535;
+    opacity: 0.8;
+    
+}
+.wrapper .card:after{
+    content: "sweatha";
+    position: absolute;
+    top: 125px;
+    left:-15px;
+    transform: rotate(-90deg);
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    color: red;
+    font-weight: bold;
+    
+    
+}
+.wrapper .card .info{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    padding: 20px;
+    background: #353535;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+
+.wrapper .card .info p{
+ text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 400;
+    color: red;
+    text-align: center;
+    font-size: 12px;
+}
